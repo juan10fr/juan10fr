@@ -1,0 +1,360 @@
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Montserrat Alternates', sans-serif;
+		list-style: none;
+	}
+
+	/*Estilos para el encabezado*/
+	header{
+		height: 5em;
+		background: rgb(0, 0, 0);
+		padding: 0 2em;
+		color:white;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: fixed;
+		z-index: 900;
+		width: 100%; 
+	}
+	.menu a{
+		color: white;
+		text-transform: uppercase;
+		text-decoration: white;
+		padding: 0 10px;
+		transition:0.4s;
+	}
+	.menu a:hover{
+		color: rgb(158, 0, 206);
+	}
+
+	.logo {
+		width: 30%;
+	}
+	/*Fin de Estilos para el encabezado*/
+
+
+	/*Estilos para el banner*/
+	
+	.banner{
+		margin-bottom:4em;
+		z-index: 20;
+		width: 100%;
+		height: 870px;
+		background-size: 100% 100%;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.info{
+		z-index: 1;
+		width: 100%;
+		max-width: 550px;
+		text-align: center;
+	}
+	.info h1{
+		color: rgb(0, 0, 0);
+		font-size: 4em;
+		margin-bottom: 0.5em;
+		letter-spacing: 1px;
+		text-shadow: 1px 2px rgb(0, 0, 0);
+	}
+	.info p{
+		color: #84128f;
+		margin-bottom: 30px;
+		font-size: 1em;
+		
+	}
+	.info a{
+		color: rgb(255, 255, 255);
+		text-decoration: none;
+		background: #881f92;
+		padding: 16px 37px;
+		display: inline-block;
+		border-radius: 50px black;
+		transition: all 500ms ease;
+	}
+	.info a:hover{
+		color: rgb(0, 0, 0);
+		border-bottom: 4px solid transparent;
+		border-bottom-style: hidden;
+	}
+	/*Fin estilos para el banner*/
+
+
+	/*Cartas*/
+	.container-card{
+		width: 100%;
+		display: flex;
+		max-width: 1100px;
+		margin: auto;
+		margin-top:4em;
+	}
+	.title-cards{
+		width: 100%;
+		max-width: 1080px;
+		margin: auto;
+		padding: 20px;
+		margin-top: 20px;
+		text-align: center;
+		color: #000000;
+		font-size: 1.5em;
+	}
+	.card{
+		width: 100%;
+		margin: 60px;
+		border-radius: 6px;
+		overflow: hidden;
+		background:rgb(255, 255, 255);
+		box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+		transition: all 400ms ease-out;
+		cursor: default;
+	}
+	.card:hover{
+		box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+		transform: translateY(-3%);
+	}
+	.card img{
+		left: 0;
+		width: 100%;
+		height: 220px;
+	}
+	.card .contenido-card{
+		padding: 15px;
+		text-align: center;
+	}
+	.card .contenido-card h3{
+		margin-bottom: 15px;
+		color: #000000;
+	}
+	.card .contenido-card p{
+		line-height: 1.8;
+		color: #000000;
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	.card .contenido-card a{
+		display: inline-block;
+		padding: 10px;
+		margin-top: 10px;
+		text-decoration: none;
+		color: rgb(158, 0, 206);
+		border: 0.3em solid #000000;
+		border-radius: 15em;
+		transition: all 400ms ease;
+		margin-bottom: 5px;
+}
+/*Fin Cards*/
+
+
+/*FOOTER*/
+footer{
+	margin-top:3em;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	padding: 2rem 8%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column ;
+	background-color: rgb(255, 255, 255);
+}
+.logofooter{
+	height: 75px;
+	margin-bottom: 2rem;
+}
+
+.iconoscontainer, .menu-footer-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom:1rem;
+}
+.socialicono{
+	height: 50px;
+	width: 50px;
+	border-radius:50px;
+	border: 2px solid ;
+	border-color: rgb(158, 0, 206);
+	background-image: url(/img/LinkedinBlanco.png);
+	background-position: center;
+	background-size: 60%;
+	background-repeat: no-repeat;
+	margin: 1rem;
+	background-color: rgb(0, 0, 0);
+	
+}
+.socialicono:hover{
+	background-color: #fff solid transparent;
+}
+
+.socialicono:nth-last-of-type(2){
+	background-image: url(/img/FacebookBlanco.png);
+}
+
+.socialicono:nth-last-of-type(3){
+	background-image: url(/img/TwitterBlanco.png);
+}
+
+.socialicono:nth-last-of-type(4){
+	background-image: url(/img/InstagramBlanco.png);
+}
+.menu-footer-container{
+	list-style-type: none;
+	color: #fff;
+	font-size:19px;
+}
+.menuitems{
+	margin: 1.5rem;
+	cursor: pointer;
+	opacity: 0.6;
+	color: rgb(0, 0, 0)
+}
+.menuitems:hover{
+	opacity: 1;
+}
+/*Fin FOOTER*/
+
+/*barra social */
+.barra-social{
+	position: fixed;
+	right: 0;
+	top: 35%;
+	font-size:1rem;
+	display:flex;
+	flex-direction:column;
+	align-items:flex-end;
+	z-index: 300;
+}
+/*fin barra social */
+/*TABLA */
+.tablaimg{
+	width: 100%;
+	border: 0.5em solid rgb(0, 0, 0);
+}
+.tabla{
+		position: relative;
+		width: 80%;
+		top:6.5em;
+		margin-bottom:8em;
+		left: 13em;
+		border-spacing: 10px 5px;
+	}
+/*form*/
+.contact_form{  
+	position: relative;
+	width: 25%; 
+	height: auto;
+	border-radius: 3em;  
+	padding-top: 8em;
+	padding-bottom: 5em;  
+	background-color: #fbfbfb; 
+	padding-left: 3em; 
+  }
+  
+  
+  input{
+	background-color: #fbfbfb; 
+	width: 408px; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: rgb(158, 0, 206); 
+	margin-top: 10px;  
+	padding-left: 10px;
+	margin-bottom: 20px; 
+  }
+  
+  
+  textarea{
+	background-color: #fbfbfb; 
+	width: 405px; 
+	height: 150px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: rgb(158, 0, 206); 
+	margin-top: 10px;  
+	padding-left: 10px;
+	margin-bottom: 20px; 
+	padding-top: 15px; 
+  }
+  
+  
+  label{
+	display: block; 
+	float: center;  
+  }
+  
+  
+  button{
+	height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px;   
+	margin-bottom: 20px; 
+	margin-top: 10px;   
+	text-transform: uppercase;
+	background-color: rgb(158, 0, 206); 
+	border-color: rgb(158, 0, 206); 
+	border-style: solid; 
+	border-radius: 10px;  
+	width: 420px;   
+	cursor: pointer;
+  }
+  
+  
+  button p{
+	color: #fff; 
+  }
+  
+  
+  span{
+	color: rgb(158, 0, 206); 
+  }
+  
+  
+  .aviso{
+	font-size: 13px;  
+	color: #0e0e0e;  
+  }
+  
+  
+  h1{
+	font-size: 39px;  
+	text-align: letf; 
+	padding-bottom: 20px; 
+	color: #000000;
+  }
+
+  
+  p{
+	font-size: 14px; 
+	color: #0e0e0e; 
+  }
+  /*fin form*/
+.main{
+	
+	margin: 0 auto;
+	width: 40em;
+	display: grid;
+	grid-template-columns: repeat(5,20em);
+	align-items: center;
+	position: relative;
+	top:6.5em;
+	margin-bottom:8em;
+		
+}
+  
+  
+  
+  
+ 
+  
+
